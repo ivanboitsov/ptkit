@@ -1,0 +1,24 @@
+{
+  "records": [
+    {
+      "@Host": {"id": "1685ce7c-e440-0001-0000-000000000011", "name": "srv-01.example.local", "deviceType": "Server"},
+      "Host.OsName": "Windows Server 2019",
+      "Host.OsVersion": "10.0.17763",
+      "Host.FQDN": "srv-01.example.local",
+      "Host.IpAddress": "192.0.2.11",
+      "Host.@Importance": "H",
+      "Host.@CreationTime": "2026-03-01T08:15:30.1234567Z",
+      "Host.@UpdateTime": "2026-10-12T21:04:05Z"
+    },
+    {
+      "@Host": {"id": "1685ce7c-e440-0001-0000-000000000012", "name": "srv-02.example.local", "deviceType": "Server"},
+      "Host.OsName": "Windows Server 2022",
+      "Host.OsVersion": "10.0.20348",
+      "Host.FQDN": "srv-02.example.local",
+      "Host.IpAddress": "192.0.2.12",
+      "Host.@Importance": "M",
+      "Host.@CreationTime": "2026-03-02T10:00:00Z",
+      "Host.@UpdateTime": null
+    }
+  ]
+}

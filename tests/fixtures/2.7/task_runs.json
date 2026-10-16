@@ -1,0 +1,27 @@
+{
+  "items": [
+    {
+      "id": "1a2b3c4d-0000-0001-0000-000000000101",
+      "status": "finished",
+      "startedAt": "2026-10-12T02:00:00Z",
+      "finishedAt": "2026-10-12T02:47:13Z",
+      "jobCount": 12,
+      "triggerType": "scheduled",
+      "startedBy": null,
+      "stoppedBy": null,
+      "errorStatus": "none"
+    },
+    {
+      "id": "1a2b3c4d-0000-0001-0000-000000000100",
+      "status": "finished",
+      "startedAt": "2026-10-05T02:00:00Z",
+      "finishedAt": "2026-10-05T03:01:44Z",
+      "jobCount": 12,
+      "triggerType": "manual",
+      "startedBy": {"id": "82cd4d84-a605-44c4-ab5f-f1f3f54061a4", "login": "analyst", "firstName": "Иван", "lastName": "Петров"},
+      "stoppedBy": null,
+      "errorStatus": "partial"
+    }
+  ],
+  "totalItems": 2
+}

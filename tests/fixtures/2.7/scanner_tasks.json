@@ -1,0 +1,40 @@
+[
+  {
+    "id": "19170911-c100-0001-0000-000000000002",
+    "name": "Аудит серверов Windows",
+    "description": "Еженедельный аудит",
+    "component": null,
+    "agent": {"id": "5c8a3d2e-0000-0000-0000-000000000001", "name": "collector-01"},
+    "scope": {"id": "00000000-0000-0000-0000-000000000005", "name": "Инфраструктура по умолчанию"},
+    "profile": {"id": "e27ac04f-95fb-41e0-ad0e-185b6713f08c", "name": "WindowsAudit"},
+    "module": {"id": "audit", "name": "Audit"},
+    "metatransports": [],
+    "status": "finished",
+    "created": "2026-01-15T09:00:00Z",
+    "lastRun": "2026-10-12T02:00:00Z",
+    "nextRun": "2026-10-19T02:00:00Z",
+    "lastRunErrorLevel": "green",
+    "include": {"assets": [], "targets": ["192.0.2.0/24"], "assetsGroups": []},
+    "exclude": {"assets": [], "targets": [], "assetsGroups": []},
+    "isFqdnPriority": true,
+    "validationState": "valid",
+    "lastRunError": null,
+    "hostDiscovery": {"enabled": false, "profile": null},
+    "hasBookmarks": false,
+    "credentials": [{"id": "ceab0ce8-78e2-4ad7-881f-050313d8511e", "name": "svc-audit"}],
+    "triggerParameters": {"type": "weekly", "fromDate": "2026-01-15T02:00:00Z", "toDate": null, "isEnabled": true}
+  },
+  {
+    "id": "19bc40a8-6540-0001-0000-000000000002",
+    "name": "Обнаружение узлов",
+    "description": "",
+    "status": "new",
+    "created": "2026-09-01T12:30:00Z",
+    "lastRun": null,
+    "nextRun": null,
+    "lastRunErrorLevel": null,
+    "validationState": "valid",
+    "profile": {"id": "79708016-a92a-4dac-8152-2113816162e8", "name": "HostDiscovery"},
+    "scope": {"id": "00000000-0000-0000-0000-000000000005", "name": "Инфраструктура по умолчанию"}
+  }
+]
