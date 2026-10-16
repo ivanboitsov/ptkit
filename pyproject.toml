@@ -1,0 +1,53 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ptkit"
+version = "0.1.0"
+description = "Неофициальная Python-библиотека для API продуктов Positive Technologies (MaxPatrol VM)"
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+requires-python = ">=3.9"
+dependencies = ["requests>=2.25"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Security",
+    "Typing :: Typed",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7", "ruff>=0.4", "mypy>=1.8", "types-requests"]
+
+[tool.setuptools.packages.find]
+include = ["ptkit*"]
+
+[tool.setuptools.package-data]
+ptkit = ["py.typed"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests/unit"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py39"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP", "A"]
+# Новый синтаксис аннотаций (X | Y) в рантайме недоступен в Python 3.9.
+ignore = ["UP006", "UP007", "UP035", "UP045"]
+
+[tool.ruff.lint.per-file-ignores]
+# ptkit.TimeoutError намеренно совпадает по имени со встроенным исключением.
+"ptkit/errors.py" = ["A001"]
+"ptkit/__init__.py" = ["A004"]
+# В тестах ожидаемые строки PDQL читаются лучше целиком.
+"tests/**" = ["E501", "A004"]
+
+[tool.mypy]
+strict = true
+files = ["ptkit"]

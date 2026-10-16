@@ -1,0 +1,10 @@
+{
+  "token": "XVXEKkK2XkipwNN/bFYhWw==",
+  "isPotentiallySlow": false,
+  "hasTimepointPipe": false,
+  "hasTimeseriesPipe": false,
+  "fields": [
+    {"name": "@Host", "localizedName": "Узел", "type": "Asset", "isArray": false, "origin": null},
+    {"name": "Host.OsName", "localizedName": "Host.OsName", "type": "String", "isArray": false, "origin": null}
+  ]
+}
